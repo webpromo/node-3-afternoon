@@ -37,5 +37,5 @@ app.delete('/api/cart', cart_controller.delete);
 const search_controller = require('./controllers/search_controller');
 app.get('./api/search', search_controller.search);
 
-const port = process.env.PORT || 3000;
+const port = process.env.SERVER_PORT || 3000;
 app.listen(port, () => {console.log("Server listening intently on port"+port)});
